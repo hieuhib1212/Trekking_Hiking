@@ -1,0 +1,292 @@
+/*common*/
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #000;
+    font-size: 16px;
+    font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+    background-color: #cdd3c5;
+    background-image: url("../images/alps.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #fff;
+    max-width: 980px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    border-top: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-left: 0 solid rgba(0, 0, 0, 0.15);
+    border-right: 0 solid rgba(0, 0, 0, 0.15);
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.8);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/*main content*/
+.main-content {
+    width: 938px;
+    margin: 0 auto;
+    padding-top: 20px;
+    margin-bottom: 150px;
+}
+
+.content-and-share {
+    display: flex;
+}
+/*content*/
+.content-and-share .content-panel {
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    width: 700px;
+}
+
+.content-panel {
+    margin-top: 10px;
+}
+.content-panel .image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.view-gallery-panel {
+    display: flex;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.view-gallery-panel .gallery-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    width: 90%;
+    height: 90%;
+}
+.view-gallery-panel .gallery-item:first-child {
+    margin-left: 0;
+}
+.view-gallery-panel .gallery-item:last-child {
+    padding-right: 0;
+}
+
+.img-gallery {
+    max-width: 216.74px;
+    width: auto;
+    height: 175px;
+    border-radius: 10px;
+}
+
+.gallery-item .title-gallery {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.gallery-item .content-gallery {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+.about-me {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.title-about {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.content-about {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+/*paging*/
+.paging a{
+    text-decoration: none;
+    padding: 2px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: black
+}
+.paging {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: center;
+    border-color: black;
+}
+.current-page {
+    color: blue;
+    margin: 5px;
+}
+.activeMenu{
+    font-weight: bold;
+}
+.active {
+    color: #c4c4c4;
+}
+.other-page {
+    margin: 5px;
+    text-decoration: underline;
+}
+/*end paging*/
+/*Diary*/
+hr {
+    margin: 10px 10px;
+}
+
+.diary {
+    margin-top: 5px;
+}
+.diary .diary-title p {
+    font-size: 30px;
+    font-weight: bold;
+}
+.diary-title {
+    margin: 5px;
+}
+.diary .diary-content p{
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+}
+.diary .diary-content img {
+    display: inline-block;
+    width: 35%;
+    border-radius: 6px;
+}
+.content-panel-title p {
+    font-weight: bold;
+    font-size: 30px;
+}
+.content-panel hr {
+    border-top: 3px dotted #8c8b8b;
+}
+.content-panel a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*Photo Album*/
+.heading {
+    font-size: x-large;
+    font-weight: bold;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.slide {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.mySlides {
+    display: none;
+}
+.mySlides img {
+    vertical-align: middle;
+    height: 465px;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.thumbnail {
+    display: inline-block;
+    margin: 8px;
+    line-height: 22px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: all 0.5s ease-in-out;
+    padding: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    width: 20%;
+    height: 40%;
+}
+.thumbnail:hover {
+    transform: scale(1.1);
+    
+}
+.thumbnail img{
+    height: auto;
+    width: 100%;
+    vertical-align: middle;
+}
+.thumbnail img:hover {
+    cursor: pointer;
+}
+.slide {
+    margin-top: 10px;
+}
+
+
+
+

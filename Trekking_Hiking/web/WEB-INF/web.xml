@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>DiaryController</servlet-name>
+        <servlet-class>controller.DiaryController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LinksController</servlet-name>
+        <servlet-class>controller.LinksController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FrontController</servlet-name>
+        <servlet-class>controller.FrontController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AlbumController</servlet-name>
+        <servlet-class>controller.AlbumController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DiaryController</servlet-name>
+        <url-pattern>/DiaryController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LinksController</servlet-name>
+        <url-pattern>/LinksController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FrontController</servlet-name>
+        <url-pattern>/FrontController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AlbumController</servlet-name>
+        <url-pattern>/AlbumController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

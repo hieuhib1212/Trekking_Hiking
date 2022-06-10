@@ -1,0 +1,63 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 19, 2021, 7:32:35 PM
+    Author     : Hiệu Bùi
+*/
+.footer {
+    height: 80.22px;
+    margin-top: auto;
+    background-color: inherit;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.footer .footer-content {
+    width: 938px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+.link-footer {
+    text-decoration: underline;
+}
+.link-footer:hover {
+    text-decoration: none;
+}
+.footer-page-counter {
+    display: flex;
+    align-items: flex-end;
+}
+.footer-page-counter-item {
+    border: solid 0 #000;
+    background: #fff;
+    font-size: 14.4px;
+    font-family: Arial, Helvetica, Arial, sans-serif;
+    line-height: 14.4px;
+    padding: 2px 2px 1px;
+    margin: 3px 2px 0 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px #595959;
+    float: left;
+    text-align: center;
+    color: #000;
+    font-weight: 700;
+    width: 10px;
+    position: relative;
+}
+.footer-page-counter-item::before {
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 52%;
+    left: 0;
+    margin-top: -1px;
+    background: rgba(0, 0, 0, 0.25);
+    width: 100%;
+}

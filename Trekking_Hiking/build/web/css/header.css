@@ -1,0 +1,73 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 19, 2021, 7:30:12 PM
+    Author     : Hiệu Bùi
+*/
+.nav-bar {
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+    height: 40px;
+    background-color: #75706a;
+}
+.content-bar {
+    width: 938px;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.item {
+    display: table;
+    padding: 0 10px;
+    height: 100%;
+    color: #ffffff;
+}
+
+.item a {
+    display: table-cell;
+    vertical-align: middle;
+}
+.item a:hover {
+    text-decoration: underline;
+}
+
+.bold-font {
+    font-weight: bold;
+}
+/*title*/
+.title {
+    height: 83.56px;
+    background-color: #f5efe1;
+    padding: 15px 0 30px;
+    color: #43464f;
+}
+
+.title-main {
+    width: 938px;
+    margin: 0 auto;
+}
+
+.title-main .text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #43464f;
+}
+.text .photo-link {
+    font-size: 47px;
+    margin-left: 20px;
+}
+.text:hover .photo-link a {
+    text-decoration: underline;
+}
+.text .welcome-text {
+    font-size: 22px;
+    margin-left: 20px;
+}
+

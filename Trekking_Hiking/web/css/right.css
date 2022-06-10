@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 19, 2021, 7:39:27 PM
+    Author     : Hiệu Bùi
+*/
+.share-panel {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    height: 150px;
+    margin-left: 20px;
+}
+.content-and-share .share-panel {
+    color: #000;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: "Times New Roman", Helvetica, Arial, sans-serif;
+    margin-right: 20px;
+}
+.error {
+    text-align: center;
+}
+.a-error {
+    color: red;
+}
+.share-panel .title-share {
+    font-size: 22px;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+.share-panel {
+    border-radius: 10px;
+}
+.title-share {
+    font-weight: 900;
+}
+.share-panel .content-share {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+.share-panel .content-share ul {
+    margin: 0;
+    list-style: none;
+    padding: 15px 15px;
+}
+.share-panel .content-share ul li {
+    line-height: 22px;
+    display: flex;
+    list-style: none;
+}
+.share-panel .content-share a {
+    text-decoration: underline;
+}
+.share-panel .content-share a:hover {
+    text-decoration: none;
+}
+.share-panel img{
+    margin-top: 2px;
+    height: 16px;
+    width: 16px;
+    margin-right: 5%;
+}
